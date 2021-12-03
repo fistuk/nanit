@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="profile_image_default_stroke">6dp</dimen>
+
+    <!-- Should be half of a stroke size -->
+    <dimen name="profile_image_padding">3dp</dimen>
+</resources>
