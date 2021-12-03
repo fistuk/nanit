@@ -8,6 +8,9 @@
         <entry key="app/src/main/res/drawable/camera_icon_yellow.xml" value="0.346875" />
         <entry key="app/src/main/res/drawable/default_place_holder_blue.xml" value="0.41302083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2513586956521739" />
+        <entry key="app/src/main/res/layout/age_view.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/birthday_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/details_fragment.xml" value="0.2563405797101449" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.1" />
         <entry key="app/src/main/res/layout/picture_sources_fragment.xml" value="0.335" />
         <entry key="app/src/main/res/layout/profile_image_view.xml" value="0.1" />
