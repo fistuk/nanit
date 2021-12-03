@@ -1,6 +1,7 @@
 package com.sample.nanit.di
 
 import android.content.Context
+import com.sample.nanit.view.BirthdayFragment
 import com.sample.nanit.view.DetailsFragment
 import com.sample.nanit.view.PhotoPickerFragment
 import dagger.BindsInstance
@@ -20,6 +21,7 @@ interface AppComponent {
         fun create(@BindsInstance context: Context): AppComponent
     }
 
+    fun inject(fragment: BirthdayFragment)
     fun inject(fragment: DetailsFragment)
     fun inject(fragment: PhotoPickerFragment)
 }
