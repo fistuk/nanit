@@ -14,7 +14,7 @@
         tools:context=".view.MainActivity">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/nanitLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -30,7 +30,7 @@
             android:layout_marginTop="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/nanitLogo" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name"
@@ -76,8 +76,8 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/button"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/birthdayButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -89,6 +89,7 @@
             android:insetRight="0dp"
             android:insetBottom="0dp"
             android:text="@string/show_birthday_screen"
+            app:cornerRadius="21dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/date" />

@@ -19,7 +19,6 @@ import javax.inject.Inject
 
 class PhotoPickerViewModel @Inject constructor(val context: Context, private val userPreferences: UserPreferences) : ViewModel() {
 
-
     private val _babyPhoto = MutableLiveData<File>()
     val babyPhoto: LiveData<File>
         get() = _babyPhoto
