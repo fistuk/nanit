@@ -3,6 +3,13 @@
     <color name="nanit_blue">#8BD3E4</color>
     <color name="nanit_yellow">#FEBE21</color>
     <color name="nanit_green">#6FC5AF</color>
+    <color name="nanit_red">#ef7b7b</color>
+
+    <color name="nanit_blue_bg">#daf1f6</color>
+    <color name="nanit_yellow_bg">#feefcb</color>
+    <color name="nanit_green_bg">#c5e8df</color>
+    <color name="nanit_text">#394562</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
