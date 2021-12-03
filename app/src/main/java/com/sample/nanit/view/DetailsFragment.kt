@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.commit
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.datepicker.MaterialDatePicker
@@ -64,6 +65,10 @@ class DetailsFragment : Fragment() {
             binding.dateEditText.setText(date)
         })
 
+        viewModel.enableBirthdayButton.observe(viewLifecycleOwner, { enabled ->
+            binding.birthdayButton.isEnabled = enabled
+        })
+
         binding.nameEditText.setOnEditorActionListener { textView, i, keyEvent ->
             if (i == EditorInfo.IME_ACTION_DONE) {
                 //Clear focus here from edittext
@@ -98,6 +103,14 @@ class DetailsFragment : Fragment() {
                         }
 
                 datePicker.show(childFragmentManager, "TAG")
+            }
+        }
+
+
+        binding.birthdayButton.setOnClickListener {
+            requireActivity().supportFragmentManager.commit {
+                addToBackStack(null)
+                add(R.id.contentContainer, BirthdayFragment(), null)
             }
         }
     }
